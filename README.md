@@ -76,18 +76,18 @@ O sistema precisa de usuários padrão para testar o fluxo de aprovação. Use o
 
 ```bash
 -- Inserir Analista
-INSERT INTO "Users" (nome, email, senha, cargo) VALUES
-('Analista 1', 'analista@cooperfilme.com', '123456', 'Analista');
+INSERT INTO "Users" (nome, email, senha, cargo, createdAt, updatedAt) VALUES
+('Analista 1', 'analista@cooperfilme.com', '123456', 'ANALISTA', now(), now()));
 
 -- Inserir Revisor
-INSERT INTO "Users" (nome, email, senha, cargo) VALUES
-('Revisor 1', 'revisor@cooperfilme.com', '123456', 'Revisor');
+INSERT INTO "Users" (nome, email, senha, cargo, createdAt, updatedAt) VALUES
+('Revisor 1', 'revisor@cooperfilme.com', '123456', 'REVISOR', now(), now()));
 
 -- Inserir Aprovadores
-INSERT INTO "Users" (nome, email, senha, cargo) VALUES
-('Aprovador 1', 'aprovador1@cooperfilme.com', '123456', 'Aprovador'),
-('Aprovador 2', 'aprovador2@cooperfilme.com', '123456', 'Aprovador'),
-('Aprovador 3', 'aprovador3@cooperfilme.com', '123456', 'Aprovador');
+INSERT INTO "Users" (nome, email, senha, cargo, createdAt, updatedAt) VALUES
+('Aprovador 1', 'aprovador1@cooperfilme.com', '123456', 'APROVADOR', now(), now()),
+('Aprovador 2', 'aprovador2@cooperfilme.com', '123456', 'APROVADOR', now(), now())),
+('Aprovador 3', 'aprovador3@cooperfilme.com', '123456', 'APROVADOR', now(), now()));
 
 ```
 ## Credenciais de Acesso
